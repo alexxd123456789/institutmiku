@@ -1,0 +1,179 @@
+#empresa{
+    height: 1102.84px;
+    background-image: url("../img/backgrounds/oficina3d.jpg");
+    background-attachment: fixed;
+}
+
+#empresa > .introduccion{
+    padding-top: 150px;
+}
+
+.slider-container{
+    height: 1045px;
+}
+
+.slider{
+    background-color: transparent;
+    height: 767.19px;
+    width: 1000px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-rows: auto 150px;
+}
+
+.slider input{
+    display: none;
+}
+
+.labelContainer{
+    width: 500px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 25px;
+    margin-left: 100px;
+    grid-row-start: 2;
+}
+
+.labelContainer label{
+    transition: 1s;
+}
+
+.ldiv{
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    transition: 1s;
+    background-size: cover;
+    border-radius: 15px;
+}
+
+#l1 .ldiv{
+    background-image: url(../img/mision-vision-valores-ucrania/mision.jpg);
+}
+
+#l2 .ldiv{
+    background-image: url(../img/mision-vision-valores-ucrania/visionn.jpg);
+}
+
+#l3 .ldiv{
+    background-image: url(../img/mision-vision-valores-ucrania/valores.jpg);
+    background-position: right;
+}
+
+#l4 .ldiv{
+    background-image: url(../img/mision-vision-valores-ucrania/ucrania.jpg);
+}
+
+.calibrationdiv{
+    /* border: 1px solid black; */
+    width: 1200px;
+    height: 600px;
+    margin: 0 0 0 auto;
+    background-color: white;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.img-description{
+    width: 500px;
+    height: 550px;
+    border: 1px solid rgba(0, 0, 0, 0.116);
+    margin-right: 20px;
+    border-radius: 25px;
+    /* box-shadow: rgba(0, 0, 0, 0.13) 0px 0px 0px 2px; */
+    box-shadow: rgba(0, 74, 173, 0.4) 5px 5px, rgba(0, 74, 173, 0.3) 10px 10px, rgba(0, 74, 173, 0.2) 15px 15px, rgba(0, 74, 173, 0.1) 20px 20px, rgba(0, 74, 173, 0.05) 25px 25px;
+}
+
+
+.img-description .desc{
+    margin: 20px;
+    margin-top: 200px;
+    opacity: 0;
+    position: absolute;
+    transition: 1s;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select:none;
+    user-select:none;
+    width: 450px;
+}
+
+#r1:checked ~ .labelContainer > #l1{
+    transform: translate(183px, -390px);
+    z-index: 8;
+}
+
+#r2:checked ~ .labelContainer > #l2{
+    transform: translate(52px, -390px);
+    z-index: 8;
+}
+
+#r3:checked ~ .labelContainer > #l3{
+    transform: translate(-65px, -390px);
+    z-index: 8;
+}
+
+#r4:checked ~ .labelContainer > #l4{
+    transform: translate(-190px, -390px);
+    z-index: 8;
+}
+
+
+#r1:checked ~ .labelContainer > #l1 > .ldiv{
+    transform: scale(5.5);
+    cursor: default;
+    border-radius: 0;
+}
+
+#r2:checked ~ .labelContainer > #l2 > .ldiv{
+    transform: scale(5.5);
+    cursor: default;
+    border-radius: 0;
+}
+
+#r3:checked ~ .labelContainer > #l3 > .ldiv{
+    transform: scale(5.5);
+    cursor: default;
+    border-radius: 0;
+}
+
+#r4:checked ~ .labelContainer > #l4 > .ldiv{
+    transform: scale(5.5);
+    cursor: default;
+    border-radius: 0;
+}
+
+#r1:checked ~ .calibrationdiv #p1{
+    opacity: 1;
+}
+
+#r2:checked ~ .calibrationdiv #p2{
+    opacity: 1;
+}
+
+#r3:checked ~ .calibrationdiv #p3{
+    opacity: 1;
+}
+
+#r4:checked ~ .calibrationdiv #p4{
+    opacity: 1;
+}
+
+.desc h4{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.desc hr{
+    width: 300px;
+    margin: auto;
+}
+
+.desc p{
+    text-align: center;
+    margin-top: 15px;
+}

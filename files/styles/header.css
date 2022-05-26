@@ -1,0 +1,128 @@
+/* 
+font-family: 'Comfortaa', cursive;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Roboto', sans-serif;
+ */
+
+
+.idiomas > ul{
+    display: none;
+    position: absolute;
+    list-style: none;
+    padding-top: 15px;
+}
+
+.idiomas > ul > li{
+    height: 100%;
+    margin-bottom: 7px;
+}
+
+.idiomas:hover > ul{
+    display:block;
+}
+
+nav{
+    width: 100%;
+    background-color: transparent;
+    float: left;
+    display: flex;
+    justify-content: space-around;
+}
+
+#headerLogo{
+    height: 150px;
+}
+
+#pabajo{
+    color: white;
+    font-size: 5rem;
+    position: absolute;
+    bottom: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    animation-name: pabajo;
+    animation-duration: 13s;
+    animation-iteration-count: infinite;
+    animation-delay: 5s;
+}
+
+#pabajo a{
+    color: white;
+    text-decoration: none;
+}
+
+
+.site-header{
+    height: 100vh;
+    background: url(../img/backgrounds/bienvenida.jpg);
+    background-attachment: fixed;
+}
+
+.headerLinks ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.3em;
+    transition-duration: 0.5s;
+}
+
+.headerLinks ul li a:hover{
+    color: var(--secundario);
+}
+
+.headerLinks{
+    display: flex;
+    align-items: center;
+}
+
+.headerLinks > ul > li{
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.site-title{
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 20%;
+}
+
+.site-title h1{
+    font-size: 5rem;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+}
+
+
+@keyframes pabajo {
+    0%{
+        bottom: 5%;
+    }
+    1%{
+        bottom: 7%;
+    }
+    3%{
+        bottom: 0;
+    }
+    4%{
+        bottom: 5%;
+    }
+    /* 50%{
+        bottom: 5%;
+    } */
+    6%{
+        bottom: 7%;
+    }
+    8%{
+        bottom: 0;
+    }
+    10%{
+        bottom: 5%;
+    }
+    100%{
+        bottom: 5%;
+    }
+}
+
+
+
