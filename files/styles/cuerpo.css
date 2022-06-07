@@ -140,7 +140,7 @@ main{
     margin-top: -15px;
     padding-bottom: 15px;
     position: relative;
-    bottom: 10cm;
+    bottom: 370px;
     z-index: 1;
     transition: 1s;
     float: left;
@@ -158,7 +158,7 @@ main{
 }
 
 .uwu:checked ~ .info{
-    transform: translate(0, 10cm);
+    transform: translate(0, 370px);
 }
 
 .uwu:checked ~ label > i{
